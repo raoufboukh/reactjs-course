@@ -1,0 +1,8 @@
+.sidebar{
+  height: 100vh;
+  background-color: rgb(245 245 245)
+}
+
+.row{
+  margin-right: 0 !important;
+}

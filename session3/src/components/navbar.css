@@ -1,0 +1,101 @@
+header {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+a{
+    text-decoration: none;
+}
+header div a{
+  color: #aaa;
+  margin: 10px;
+}
+
+header .links i {
+  display: none;
+  position: relative;
+}
+
+header div ul {
+  display: flex;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  height: 500px;
+}
+
+.disable {
+  display: none;
+}
+.slider {
+  position: relative;
+}
+.slider i {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 30px;
+  color: white;
+}
+
+.slider i.fa-chevron-right {
+  right: 5%;
+}
+.slider i.fa-chevron-left {
+  left: 5%;
+}
+
+.products .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.products .container .card {
+  box-shadow: 0 0 10px black;
+}
+
+.card a{
+  background-color: #4caf50;
+  border: none;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.container img {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  header .links i {
+    display: block;
+    cursor: pointer;
+  }
+  header .links ul {
+    display: none;
+  }
+
+  header .links ul li {
+    margin: 10px;
+  }
+
+  header .links ul.show {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 40%);
+    background: #eee;
+    width: 50%;
+    padding: 0 25px;
+  }
+}

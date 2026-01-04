@@ -1,0 +1,13 @@
+.Details .card img{
+    width: 70%;
+}
+
+.Details{
+    margin: 20px 0;
+}
+
+.Details .card{
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}

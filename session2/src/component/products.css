@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container div{
+    width: 23%;
+}
+
+.container div img{
+    width: 100%;
+    height: 200px;
+}
+
+.done{
+    background-color: #d10;
+    color: white;
+    border: none;
+    outline: none;
+}
